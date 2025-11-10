@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14 - html</title>
+
+</head>
+
+
+<body>
+
+    <h1> Formulário </h1>
+
+   <form action="formulario1.php" method="post">
+
+    <fieldset>
+
+        <legend>Dados Pessoais</legend>
+
+        <div>
+            <label for="">Nome</label> <br>
+            <input type="text" name="textNome" id="textNome" required> <br>
+        </div>
+        <br>
+
+        <div>
+            <label for="">Endereço</label> <br>
+            <input type="text" name="textEndereco" id="textEndereco" maxlength ="300"> <br>
+        </div>
+        <br>
+
+        <div>
+        <label for="">Cidade</label><br>
+        <input type="text" name="textCidade" id="textCidade" >
+        </div>
+        <br>
+
+        <div>
+        <label for="">Cidade</label> <br>
+        <input type="text" name="textCidade" id="textCidade">
+        </div>
+        <br>
+
+
+        <label for="">Estado</label><br>
+        <select name="cboEstado" id="cboEstado">
+
+            <option value="1">Brasília</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Rio de Janeiro</option>
+            <option value="4">Bahia</option>
+            <option value="5">Outros</option>
+
+
+
+        </select>
+
+    </fieldset>
+        <br>
+
+        <fieldset>
+
+            <legend>Dados Profissionais</legend>
+
+            <div>
+            <label for="">Natureza do Cargo</label><br>
+            <input type="radio" name="cbCargo" id="cbCargo" value="1">Gerência
+            <input type="radio" name="cbCargo" id="cbCargo" value="2">Financeiro  
+            <input type="radio" name="cbCargo" id="cbCargo" value="3">Administrativo    
+            <input type="radio" name="cbCargo" id="cbCargo" value="4">Jurídico 
+            <input type="radio" name="cbCargo" id="cbCargo" value="5">TI   
+            </div>
+            <br>
+
+            <div>
+            <label for="">Área de Interesse</label><br>
+            <input type="checkbox" name="cbArea" id="cbArea" value="1">Gerência
+            <input type="checkbox" name="cbArea" id="cbArea" value="2">Financeiro  
+            <input type="checkbox" name="cbArea" id="cbArea" value="3">Administrativo    
+            <input type="checkbox" name="cbArea" id="cbArea" value="4">Jurídico 
+            <input type="checkbox" name="cbArea" id="cbArea" value="5">TI   
+            </div>
+            <br>
+
+           
+            <br>
+
+
+            <div>
+                <label for="">Mini Currículo</label>
+                <textarea name="txtCurri" id="txtCurr" cols="30" rows="10"
+                maxlength="300">
+
+                </textarea>
+            </div>
+            <br>
+
+
+        </fieldset>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="submit">Cancelar</button>
+   </form>
+    
+</body>
+
+</html>

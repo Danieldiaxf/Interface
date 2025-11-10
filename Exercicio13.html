@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13 - html</title>
+
+</head>
+
+
+<body>
+
+    <h1> Formulário </h1>
+
+   <form action="formulario1.php" method="post">
+
+    <fieldset>
+
+        <legend>Dados Pessoais</legend>
+
+        <div>
+            <label for="">Nome</label> <br>
+            <input type="text" name="textNome" id="textNome" required> <br>
+        </div>
+        <br>
+
+        <div>
+            <label for="">Ano Nascimento</label> <br>
+            <input type="number" name="textNascimento" id="textNascimento" min="1950" max="2030" step="20"> <br>
+        </div>
+        <br>
+
+        <div>
+        <label for="">Email</label required><br>
+        <input type="email" name="texEmail" id="texEmail" autofocus>
+        </div>
+        <br>
+
+        <div>
+        <label for="">Cidade</label> <br>
+        <input type="text" name="textCidade" id="textCidade">
+        </div>
+        <br>
+
+
+        <label for="">Estado</label><br>
+        <select name="cboEstado" id="cboEstado">
+
+            <option value="1">Brasília</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Rio de Janeiro</option>
+            <option value="4">Bahia</option>
+            <option value="5">Outros</option>
+
+
+
+        </select>
+
+    </fieldset>
+        <br>
+
+        <fieldset>
+
+            <legend>Preferencias</legend>
+
+            <div>
+            <label for="">Passeios Favoritos</label><br>
+            <input type="checkbox" name="cbLacais" id="cbLocais" value="1">Cachoeira <br>
+            <input type="checkbox" name="cbLacais" id="cbLocais" value="2">Praia <br>  
+            <input type="checkbox" name="cbLacais" id="cbLocais" value="3">Trilha <br>   
+            <input type="checkbox" name="cbLacais" id="cbLocais" value="4">Cidade <br>   
+            <input type="checkbox" name="cbLacais" id="cbLocais" value="5">Fazenda <br>   
+            </div>
+            <br>
+
+            <div>
+                <label for="">Selecione uma Cor Favorita</label>
+                <input type="color" name="txtColor" id="txtColor">
+            </div>
+            <br>
+
+
+            <div>
+                <label for="">Descreva sua Jornada</label><br>
+                <textarea name="txtDesc" id="txtDesc" cols="30" rows="10"
+                maxlength="300">
+
+                </textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="">Data de Cadastro</label><br>
+                <input type="date" name="txtData" id="txtData" min="2025-01-01" max="2025-12-31">
+            </div>
+
+        </fieldset>
+        <br>
+
+        <button type="submit">Cadastrar</button>
+   </form>
+    
+</body>
+
+</html>
